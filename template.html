@@ -1,0 +1,23 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Default Landing Page</title>
+  {{ file.Read "style.css" }}
+</head>
+<body>
+
+  <div class="flex-container">
+    {{ $dir := "cards" }}
+    {{ range file.ReadDir $dir }} 
+      {{ if (hasSuffix . ".html") }}
+      <!-- Processing {{ . }} -->
+      <div class="card">
+	{{ file.Read (filepath.Join $dir .) }}
+      </div>
+      {{ end}}
+    {{ end }}
+  </div>
+</body>
+</html>
