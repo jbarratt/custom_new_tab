@@ -12,6 +12,7 @@ A small bit of CLI plumbing to make a custom new tab page with the information *
 * Add content in `cards/`: Markdown ending in `.md` or HTML ending in `.html`
 * Run `make`
 * Configure your browser to use `index.html` as the new tab page, perhaps using the [New Tab Redirect](https://chrome.google.com/webstore/detail/new-tab-redirect/icpgjfneehieebagbmdbhnlpiopdcmna) extension
+* optional: replace `style.css` with `dark_style.css` to use a dark mode stylesheet
 
 ## Dependencies
 
